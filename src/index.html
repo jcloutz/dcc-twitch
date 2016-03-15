@@ -1,0 +1,40 @@
+<!-- HTML Here -->
+<div class="container-fluid">
+  <header class="header">
+    <img class="header__logo" src="http://s.jtvnw.net/jtv_user_pictures/hosted_images/Twitch_BlackLogo.png" alt="Twitch.tv logo" />
+    <nav class="nav">
+      <a href="#" class="nav__btn"id="show_all">All</a>
+      <a href="#" class="nav__btn"id="show_online">Online</a>
+      <a href="#" class="nav__btn"id="show_offline">Offline</a>
+    </nav>
+  </header>
+
+
+
+
+  <div id="content" class="loading"></div>
+</div>
+
+<script id="channel-template" type="text/x-handlebars-template">
+  <div class="channel channel__entry {{#if stream.stream}}channel__entry--online{{else}}channel__entry--offline{{/if}}" data-status="{{#if stream.stream}}online{{else}}offline{{/if}}">
+    {{#if logo}}
+      <img class="channel__entry-logo" src="{{logo}}" />
+    {{ else }}
+      <img class="channel__entry-logo" src="http://s.jtvnw.net/jtv_user_pictures/hosted_images/GlitchIcon_WhiteonPurple.png" />
+    {{/if}}
+
+
+    <div class="channel__entry-content">
+      <h4 class="channel__entry-title"><a href="{{url}}" target="_blank"><i class="ion-social-twitch-outline"></i>/{{display_name}}</a></h4>
+      <p class="channel__entry-status-message">{{status}}</p>
+    </div>
+    <div class="channel__entry-meta">
+      <div class="channel__entry-meta-item">
+        <i class="ion-eye"></i> {{views}}
+      </div>
+      <div class="channel__entry-meta-item">
+         <i class="ion-arrow-graph-up-right"></i> {{followers}}
+      </div>
+    </div>
+  </div>
+</script>

@@ -1,0 +1,31 @@
+{
+  "outputDir": "output",
+  "title": "FCC Boilerplate",
+
+  "base_url": "github.io",
+  "html": {
+    "html_classes": [],
+    "head": [
+      "<meta name='viewport' content='width=device-width, initial-scale=1'>"
+    ]
+  },
+  "css": {
+    "autoprefixer": true,
+    "default": "normalize",
+    "external": [
+      "//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css",
+      "//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.0/animate.min.css",
+      "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    ],
+    "defaults": {
+      "normalize": "//cdn.jsdelivr.net/normalize/latest/normalize.min.css",
+      "reset": "https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    }
+  },
+  "javascript": {
+    "external": [
+      "//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"
+    ]
+  }
+}
