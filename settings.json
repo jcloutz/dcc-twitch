@@ -2,7 +2,7 @@
   "outputDir": "output",
   "title": "FCC Boilerplate",
 
-  "base_url": "github.io/fcc-twitch",
+  "base_url": "http://jcloutz.github.io/fcc-twitch",
   "html": {
     "html_classes": [],
     "head": [
